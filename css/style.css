@@ -12,6 +12,7 @@
 }
 
 header {
+  height: 720px;
   background: url("../image/background.png") center/cover no-repeat;
 }
 
@@ -46,6 +47,14 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover{
+  background-color: #43b97f;
+}
+
+.active{
+  background-color: #43b97f;
+}
+
 .select-id {
   display: flex;
   align-items: center;
@@ -58,4 +67,83 @@ nav ul li a {
 
 .select-icon {
   cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(720px - 98px);
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 780px;
+}
+
+.wrapper h2 {
+  font-weight: 400;
+  font-size: 47.78px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 65px;
+}
+
+.wrapper form {
+  padding: 9px 11px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px #444444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.input-form {
+  display: flex;
+  width: 485px;
+}
+
+.input-form input {
+  font-weight: 400;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #3d3e48;
+  border: 0;
+  outline: 0;
+}
+
+.input-form input:not(:first-of-type) {
+  border-left: 1px solid #3d3e48;
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  background: #43b97f;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+form button:hover{
+  transform: scaleX(1.05);
 }
