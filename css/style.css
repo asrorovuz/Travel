@@ -13,6 +13,7 @@
 
 header {
   height: 720px;
+  margin-bottom: 100px;
   background: url("../image/background.png") center/cover no-repeat;
 }
 
@@ -47,11 +48,11 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: #43b97f;
 }
 
-.active{
+.active {
   background-color: #43b97f;
 }
 
@@ -144,6 +145,72 @@ form button {
   cursor: pointer;
 }
 
-form button:hover{
+form button:hover {
   transform: scaleX(1.05);
+}
+
+main .points {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+main .points .points-imgs {
+  display: flex;
+}
+
+main .points .points-imgs .points-img:nth-child(2) {
+  display: flex;
+  align-items: flex-end;
+  margin-left: -10px;
+  margin-right: -70px;
+}
+
+.points-content .points-text span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #295943;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.points-content .points-text h3 {
+  font-weight: 700;
+  font-size: 27.65px;
+  color: #3d3e48;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.points-content .points-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #3d3e48;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.points-info{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding: 10px;
+}
+
+.points-info .info-item{
+  width: 50%;
+}
+
+.points-info .info-item p{
+  font-weight: 400;
+font-size: 16px;
+color: #3D3E48;
+}
+
+.points-info .info-item span{
+  font-weight: 700;
+font-size: 27.65px;
+color: #295943;
+margin-bottom: 5px;
 }
