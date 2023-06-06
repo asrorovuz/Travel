@@ -216,7 +216,12 @@ main .points .points-imgs .points-img:nth-child(2) {
   margin-bottom: 5px;
 }
 
-.discover-title {
+.discover {
+  margin-bottom: 100px;
+}
+
+.discover-title,
+.about-title {
   font-weight: 700;
   font-size: 16px;
   text-transform: capitalize;
@@ -224,7 +229,8 @@ main .points .points-imgs .points-img:nth-child(2) {
   text-align: center;
 }
 
-.discover-title-main {
+.discover-title-main,
+.about-title-main {
   font-weight: 700;
   font-size: 27.65px;
   line-height: 120%;
@@ -260,7 +266,7 @@ main .points .points-imgs .points-img:nth-child(2) {
   margin-bottom: 22px;
 }
 
-.card-info{
+.card-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -279,4 +285,48 @@ main .points .points-imgs .points-img:nth-child(2) {
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+
+/* start about  */
+
+.user{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 21px;
+}
+
+.user article {
+  max-width: 380px; 
+  padding: 10px;
+}
+
+.user article .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user article .card-header h3 {
+  font-weight: 700;
+  font-size: 23.04px;
+  color: #3d3e48;
+}
+
+.user article p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #3d3e48;
+}
+
+.active{
+  background-color: #43B97F;
+  color: #fff;
+}
+
+.user .active .card-header h3, .user .active p{
+  color: #fff;
 }
